@@ -1,0 +1,35 @@
+﻿@model WebApplication4.Models.sinhvien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sinhvien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tensinhvien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tensinhvien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.khoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.khoa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
